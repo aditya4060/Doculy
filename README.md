@@ -128,15 +128,3 @@ Redis is used as a best-effort cache. If Redis is unavailable, the backend falls
 - `answer:{document_id}:{question_hash}`: cached final answer and source snippets.
 
 Document caches are invalidated when a document is uploaded, processed, or deleted. Retrieval and answer caches are invalidated when the associated document is deleted or reprocessed.
-
-## Known Limitations
-
-- Single-user only.
-- No login, signup, JWT, or user table.
-- Upload processing happens during the upload request.
-- Files are stored on the local backend filesystem.
-- No OCR for scanned PDFs.
-- No streaming responses.
-- No queue, worker, reranker, or advanced observability.
-
-See [SYSTEM_DESIGN.md](SYSTEM_DESIGN.md), [SCALABILITY.md](SCALABILITY.md), and [FUTURE_WORK.md](FUTURE_WORK.md) for more detail.
