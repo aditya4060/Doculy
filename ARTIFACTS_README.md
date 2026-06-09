@@ -1,4 +1,4 @@
-# Doculy Interview Notes
+# Doculy 
 
 ## System Design
 
